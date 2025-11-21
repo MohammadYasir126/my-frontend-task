@@ -3,10 +3,10 @@ import "../styles/hero.css";
 import whiteArrow from "../assets/arrow-white.png";
 import greenArrow from "../assets/harrow.png";
 
-const HeroSection = () => {
+export default function HeroSection() {
   return (
-    <section className="hero-section" id="hero">
-      <div className="container hero-container">
+    <section className="hero-section">
+      <div className="hero-container">
 
         <div className="hero-left">
           <h3 className="hero-subtitle">
@@ -27,11 +27,13 @@ const HeroSection = () => {
 
           <div className="hero-buttons">
             <button className="btn-view">
-              View More <img src={whiteArrow} alt="arrow" className="arrow-icon" />
+              View More
+              <img src={whiteArrow} alt="arrow" className="arrow-icon" />
             </button>
 
             <button className="btn-touch">
-              Get In Touch <img src={greenArrow} alt="arrow" className="arrow-icon" />
+              Get In Touch
+              <img src={greenArrow} alt="arrow" className="arrow-icon" />
             </button>
           </div>
         </div>
@@ -41,7 +43,6 @@ const HeroSection = () => {
           <p className="card-sub">Lorem Ipsum Is Simply Dummy Text Of The Printing</p>
 
           <div className="card-grid">
-
             <label>
               Full Name
               <input type="text" placeholder="Enter You Name" />
@@ -64,9 +65,8 @@ const HeroSection = () => {
 
             <label className="full">
               Project Brief
-              <textarea placeholder="Enter Your Project Brief"></textarea>
+              <textarea placeholder="Enter You Project Brief"></textarea>
             </label>
-
           </div>
 
           <button className="btn-submit">
@@ -78,6 +78,4 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
-
-export default HeroSection;
+}

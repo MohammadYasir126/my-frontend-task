@@ -1,66 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import arrowIcon from "../assets/harrow.png";
+import downArrow from "../assets/down_arrow_icon.png";
 import "../styles/navbar.css";
 
-const Navbar = () => {
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+  }, [open]);
+
   return (
-    <nav className="navbar custom-navbar navbar-expand-lg">
-      <div className="container nav-container">
-        <a
-          className="navbar-brand d-flex align-items-center nav-logo-box"
-          href="#"
-        >
+    <nav className="navbar">
+      <div className="nav-container">
+        <a className="nav-logo-box" href="#">
           <img src={logo} alt="logo" className="nav-logo" />
         </a>
 
         <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          className={`navbar-toggler ${open ? "open" : ""}`}
+          onClick={() => setOpen(!open)}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="t-icon"></span>
         </button>
 
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul className="navbar-nav align-items-center nav-menu">
-            <li className="nav-item">
-              <a className="nav-link">
-                Software Team <span className="down-icon">⌄</span>
+        <div className={`nav-collapse ${open ? "show" : ""}`}>
+          <ul className="nav-menu">
+
+            <li className="dropdown-wrapper">
+              <a
+                className="nav-link software-team"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+                Software Team
+                <img
+                  src={downArrow}
+                  className={`dropdown-arrow ${dropdownOpen ? "rotate" : ""}`}
+                  alt=""
+                />
               </a>
+
+              {dropdownOpen && (
+                <ul className="dropdown-menu">
+                  <li className="dropdown-item">Frontend Developers</li>
+                  <li className="dropdown-item">Backend Developers</li>
+                  <li className="dropdown-item">QA Engineers</li>
+                  <li className="dropdown-item">UI/UX Designers</li>
+                </ul>
+              )}
             </li>
 
-            <li className="nav-item">
-              <a className="nav-link">Services</a>
-            </li>
+            <li><a className="nav-link">Services</a></li>
+            <li><a className="nav-link">Technologies</a></li>
+            <li><a className="nav-link">Resources</a></li>
+            <li><a className="nav-link">Company</a></li>
 
-            <li className="nav-item">
-              <a className="nav-link">Technologies</a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link">Resources</a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link">Company</a>
-            </li>
-
-            <li className="nav-item">
+            <li>
               <button className="get-touch-btn">
                 Get In Touch
-                <img src={arrowIcon} alt="arrow" className="arrow-img" />
+                <img src={arrowIcon} alt="" className="arrow-img" />
               </button>
             </li>
           </ul>
         </div>
+
+        {open && <div className="nav-backdrop" onClick={() => setOpen(false)} />}
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
