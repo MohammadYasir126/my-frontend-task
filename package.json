@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://MohammadYasir126.github.io/my-frontend-task",
+  "homepage": "https://MohammadYasir126.github.io/my-frontend-task/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

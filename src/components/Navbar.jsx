@@ -13,7 +13,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar custom-navbar">
       <div className="nav-container">
         <a className="nav-logo-box" href="#">
           <img src={logo} alt="logo" className="nav-logo" />
@@ -28,7 +28,6 @@ export default function Navbar() {
 
         <div className={`nav-collapse ${open ? "show" : ""}`}>
           <ul className="nav-menu">
-
             <li className="dropdown-wrapper">
               <a
                 className="nav-link software-team"
@@ -38,7 +37,6 @@ export default function Navbar() {
                 <img
                   src={downArrow}
                   className={`dropdown-arrow ${dropdownOpen ? "rotate" : ""}`}
-                  alt=""
                 />
               </a>
 
@@ -60,7 +58,7 @@ export default function Navbar() {
             <li>
               <button className="get-touch-btn">
                 Get In Touch
-                <img src={arrowIcon} alt="" className="arrow-img" />
+                <img src={arrowIcon} alt="arrow" className="arrow-img" />
               </button>
             </li>
           </ul>
