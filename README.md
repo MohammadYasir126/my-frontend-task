@@ -1,16 +1,39 @@
-# React + Vite
+# My Frontend Task – React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created as part of my frontend assignment.  
+I built it using React, Vite, and Bootstrap with a focus on clean UI, responsive layout, and smooth performance.
 
-Currently, two official plugins are available:
+You can view the live deployed version here:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo:  
+https://mohammadyasir126.github.io/my-frontend-task/
 
-## React Compiler
+🔗 GitHub Repository:  
+https://github.com/MohammadYasir126/my-frontend-task
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## About the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The goal of this assignment was to create a visually appealing and mobile-responsive frontend using React.  
+The project includes multiple sections like Hero, Services, Hiring Process, About, Testimonials, and Footer.
+
+Each section is built as a separate React component so the project stays organized and easy to maintain.
+
+---
+
+## Tech Stack
+
+- React 19  
+- Vite  
+- Bootstrap 5  
+- CSS  
+- JavaScript  
+- GitHub Pages (deployment)
+
+---
+
+## How to Run the Project Locally
+
+1. Clone the repository:
+
