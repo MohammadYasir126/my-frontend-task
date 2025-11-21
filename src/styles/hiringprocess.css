@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --green: #2FC980;
+  --pink: #FF8C91;
+  --heading: #183737;
+  --text: #6B6F77;
+  --max-width: 1180px;
+}
+
+.hire-section {
+  background-size: cover;
+  background-position: center;
+  padding: 70px 20px 80px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.hire-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+}
+
+.hire-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0 0 10px;
+}
+
+.hire-sub {
+  font-size: 13px;
+  color: var(--text);
+  max-width: 680px;
+  margin: 0 auto 48px;
+  line-height: 1.5;
+}
+
+.hire-steps {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hire-step {
+  text-align: center;
+  width: 230px;
+}
+
+.circle-wrap {
+  width: 155px;
+  height: 155px;
+  margin: 0 auto 16px;
+  border: 5px solid var(--green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.step-badge {
+  width: 34px;
+  height: 34px;
+  background: var(--pink);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -12px;
+  right: 18px;
+}
+
+.step-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 8px 0;
+}
+
+.step-desc {
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.5;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.step-arrow {
+  width: 30px;
+  position: absolute;
+  top: 61px;
+  opacity: 0.9;
+}
+
+.arrow-1 {
+  left: 260px;
+}
+
+.arrow-2 {
+  left: 560px;
+}
+
+.arrow-3 {
+  left: 860px;
+}
+
+@media (max-width: 900px) {
+  .hire-steps {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+}

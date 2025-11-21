@@ -1,0 +1,80 @@
+.custom-navbar {
+  height: 84px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 180px;
+  height: 43.4px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3d3d3d;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #2DC67D;
+}
+
+.down-icon {
+  font-size: 12px;
+  margin-left: 4px;
+  opacity: 0.75;
+}
+
+.get-touch-btn {
+  width: 181px;
+  height: 52px;
+  border-radius: 10px;
+  border: 2px solid #2DC67D;
+  background: #ffffff;
+  color: #2DC67D;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.get-touch-btn:hover {
+  background: #2DC67D;
+  color: #ffffff;
+}
+
+.arrow-img {
+  width: 25px;      
+  height: 30px;
+  object-fit: contain;
+  margin-left: 6px;
+  display: inline-block;
+}
+
+
